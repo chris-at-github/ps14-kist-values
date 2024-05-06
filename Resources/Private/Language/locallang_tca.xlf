@@ -4,10 +4,10 @@
 		<header/>
 		<body>
 			<trans-unit id="title">
-				<source>Ps14 KistValues</source>
+				<source>KIST + ESCHERICH company values</source>
 			</trans-unit>
 			<trans-unit id="description">
-				<source>TYPO3 Extension serves as a template for TYPO3 modules</source>
+				<source>Display of company values as postcards</source>
 			</trans-unit>
 
 			<trans-unit id="elements.record-type.default">

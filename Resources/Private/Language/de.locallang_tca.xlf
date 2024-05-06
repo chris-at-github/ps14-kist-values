@@ -4,10 +4,10 @@
 		<header/>
 		<body>
 			<trans-unit id="title">
-				<target>Ps14 KistValues</target>
+				<target>KIST + ESCHERICH Firmenwerte</target>
 			</trans-unit>
 			<trans-unit id="description">
-				<target>TYPO3 Extension serves as a template for TYPO3 modules</target>
+				<target>Darstellung der Firmenwerte als Postkarten</target>
 			</trans-unit>
 
 			<trans-unit id="elements.record-type.default">
