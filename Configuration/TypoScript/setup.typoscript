@@ -1,35 +1,35 @@
 // ---------------------------------------------------------------------------------------------------------------------
 // tt_content Definition
 tt_content {
-	ps14_modulor =< lib.contentElement
-	ps14_modulor {
-		templateName = Modulor.html
+	ps14_kist_values =< lib.contentElement
+	ps14_kist_values {
+		templateName = KistValues.html
 		layoutRootPaths {
-			10 = EXT:ps14_modulor/Resources/Private/Layouts/
-			20 = EXT:ps14_site/Resources/Private/Extensions/Modulor/Layouts/
+			10 = EXT:ps14_kist_values/Resources/Private/Layouts/
+			20 = EXT:ps14_site/Resources/Private/Extensions/KistValues/Layouts/
 		}
 
 		templateRootPaths {
-			10 = EXT:ps14_modulor/Resources/Private/Templates/
-			20 = EXT:ps14_site/Resources/Private/Extensions/Modulor/Templates/
+			10 = EXT:ps14_kist_values/Resources/Private/Templates/
+			20 = EXT:ps14_site/Resources/Private/Extensions/KistValues/Templates/
 		}
 
 		partialRootPaths {
-			10 = EXT:ps14_modulor/Resources/Private/Partials/
-			20 = EXT:ps14_site/Resources/Private/Extensions/Modulor/Partials/
+			10 = EXT:ps14_kist_values/Resources/Private/Partials/
+			20 = EXT:ps14_site/Resources/Private/Extensions/KistValues/Partials/
 			30 = EXT:ps14_foundation/Resources/Private/Partials/
 			40 = EXT:ps14_site/Resources/Private/Partials/
 		}
 
 		dataProcessing {
-			200 = Ps14\Modulor\DataProcessing\ModuleProcessor
+			200 = Ps14\KistValues\DataProcessing\ModuleProcessor
 			200 {
 				importCss {
-					10 = /assets/css/modules/modulor.css
+					10 = /assets/css/modules/kist_values.css
 				}
 
 				importJs {
-					10 = /assets/js/modules/modulor.js
+					10 = /assets/js/modules/kist_values.js
 				}
 			}
 		}
@@ -38,7 +38,7 @@ tt_content {
 
 // ---------------------------------------------------------------------------------------------------------------------
 // Settings
-plugin.tx_ps14modulor {
+plugin.tx_ps14kist_values {
 	settings {
 		images {
 			main {
