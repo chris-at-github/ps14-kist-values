@@ -1,0 +1,35 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:fo="http://typo3.org/ns/Ps14/Foundation/ViewHelpers" data-namespace-typo3-fluid="true">
+	<f:layout name="Default" />
+	<f:section name="Main">
+		<f:render section="Bodytext" arguments="{_all}" />
+		<f:render section="Elements" arguments="{_all}" />
+	</f:section>
+
+	<f:section name="Bodytext">
+		<f:if condition="{data.bodytext}">
+			<f:render partial="Content/Bodytext" arguments="{bodytext: data.bodytext}" />
+		</f:if>
+	</f:section>
+
+	<f:section name="Images">
+		<f:if condition="{images}">
+			<ul>
+				<f:for each="{images}" as="image">
+					<li>
+						<f:render partial="Media/Main" section="Main" arguments="{
+							file: image,
+							settings: '{fo:settings.get(extension: \'Ps14KistValues\', path: \'images.main\')}'
+						}" />
+					</li>
+				</f:for>
+			</ul>
+		</f:if>
+	</f:section>
+
+	<f:section name="Elements">
+		<f:if condition="{elements}">
+			<f:render partial="KistValues/Listing" section="Main" arguments="{_all}" />
+			<f:render partial="KistValues/Modal" section="Main" arguments="{_all}" />
+		</f:if>
+	</f:section>
+</html>

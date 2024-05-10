@@ -1,0 +1,36 @@
+<div xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:fo="http://typo3.org/ns/Ps14/Foundation/ViewHelpers" data-namespace-typo3-fluid="true">
+	<f:section name="Main">
+		<div class="modal--container ce-kist-values__modal-container" id="ce-kist-values__modal-container">
+			<div tabindex="-1" data-micromodal-close class="modal--backdrop">
+				<f:for each="{elements}" as="element" iteration="iterator">
+					<f:render section="Item" arguments="{data: element.data, element: element, iterator: iterator}" />
+				</f:for>
+			</div>
+		</div>
+	</f:section>
+
+	<f:section name="Item">
+		<div class="modal ce-kist-values__modal" id="ce-kist-values__modal--{data.uid}" data-color-scheme="{data.tx_kist_values_color_scheme}" aria-hidden="true">
+			<button aria-label="{f:translate(key: 'LLL:EXT:ps14_foundation/Resources/Private/Language/locallang_frontend.xlf:action.close')}" class="modal--close">
+				<fo:svg.inline source="assets/svg/close.svg" />
+			</button>
+
+			<div class="ce-kist-values__modal-media">
+				<f:if condition="{element.media.0}">
+					<f:render partial="Media/Main" section="Main" arguments="{
+						file: element.media.0,
+						settings: '{fo:settings.get(extension: \'Ps14KistValues\', path: \'images.modal\')}'
+					}" />
+				</f:if>
+			</div>
+
+			<div class="ce-kist-values__modal-content">
+				<header class="ce-kist-values__modal-title">
+					<f:render partial="Header/Header" arguments="{header: data.title, layout: data.title_type}" />
+				</header>
+
+				<f:format.html>{data.description}</f:format.html>
+			</div>
+		</div>
+	</f:section>
+</div>

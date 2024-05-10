@@ -1,0 +1,22 @@
+<div xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:fo="http://typo3.org/ns/Ps14/Foundation/ViewHelpers" data-namespace-typo3-fluid="true">
+	<f:section name="Main">
+		<ul class="ce-kist-values__container">
+			<f:for each="{elements}" as="element" iteration="iterator">
+				<li class="ce-kist-values__item" id="ce-kist-values__item--{element.data.uid}" data-color-scheme="{element.data.tx_kist_values_color_scheme}">
+					<f:render section="Item" arguments="{data: element.data, element: element, iterator: iterator}" />
+				</li>
+			</f:for>
+		</ul>
+	</f:section>
+
+	<f:section name="Item">
+		<button aria-controls="ce-kist-values__modal--{data.uid}">
+			<f:if condition="{element.media.0}">
+				<f:render partial="Media/Main" section="Main" arguments="{
+					file: element.media.0,
+					settings: '{fo:settings.get(extension: \'Ps14KistValues\', path: \'images.listing\')}'
+				}" />
+			</f:if>
+		</button>
+	</f:section>
+</div>
