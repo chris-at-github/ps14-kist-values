@@ -13,6 +13,36 @@
 			<trans-unit id="elements.record-type.default">
 				<source>Default</source>
 			</trans-unit>
+			<trans-unit id="elements.color-scheme">
+				<source>Color Scheme</source>
+			</trans-unit>
+			<trans-unit id="elements.color-scheme.green-white">
+				<source>Green-White</source>
+			</trans-unit>
+			<trans-unit id="elements.color-scheme.white-black">
+				<source>White-Black</source>
+			</trans-unit>
+			<trans-unit id="elements.color-scheme.purple-white">
+				<source>Purple-White</source>
+			</trans-unit>
+			<trans-unit id="elements.color-scheme.blue-white">
+				<source>Blue-White</source>
+			</trans-unit>
+			<trans-unit id="elements.color-scheme.yellow-white">
+				<source>Yellow-White</source>
+			</trans-unit>
+			<trans-unit id="elements.color-scheme.red-white">
+				<source>Red-White</source>
+			</trans-unit>
+			<trans-unit id="elements.color-scheme.darkgrey-white">
+				<source>Darkgrey-White</source>
+			</trans-unit>
+			<trans-unit id="elements.color-scheme.orange-white">
+				<source>Orange-White</source>
+			</trans-unit>
+			<trans-unit id="elements.color-scheme.turquoise-white">
+				<source>Turquoise-White</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>
