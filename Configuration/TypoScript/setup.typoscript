@@ -21,18 +21,18 @@ tt_content {
 			40 = EXT:ps14_site/Resources/Private/Partials/
 		}
 
-#		dataProcessing {
-#			200 = Ps14\KistValues\DataProcessing\ModuleProcessor
-#			200 {
-#				importCss {
-#					10 = /assets/css/modules/kist_values.css
-#				}
-#
-#				importJs {
-#					10 = /assets/js/modules/kist_values.js
-#				}
-#			}
-#		}
+		dataProcessing {
+			200 = Ps14\Foundation\DataProcessing\ModuleProcessor
+			200 {
+				importCss {
+					10 = /assets/css/modules/kist-values.css
+				}
+
+				importJs {
+					10 = /assets/js/modules/kist-values.js
+				}
+			}
+		}
 	}
 }
 
