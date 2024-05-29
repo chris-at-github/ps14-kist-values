@@ -29,7 +29,8 @@ tt_content {
 				}
 
 				importJs {
-					10 = /assets/js/modules/kist-values.js
+					10 = /assets/js/libraries/micromodal.js
+					20 = /assets/js/modules/kist-values.js
 				}
 			}
 		}
