@@ -29,7 +29,7 @@ tt_content {
 				}
 
 				importJs {
-					10 = /assets/js/libraries/micromodal.js
+					10 = /assets/js/vendors/micromodal.js
 					20 = /assets/js/modules/kist-values.js
 				}
 			}
