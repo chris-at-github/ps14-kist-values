@@ -8,7 +8,7 @@
 			<ul class="ce-kist-values__container">
 				<f:for each="{elements}" as="element" iteration="iterator">
 					<li class="ce-kist-values__item" id="ce-kist-values__item--{element.data.uid}" data-color-scheme="{element.data.tx_kist_values_color_scheme}">
-						<f:render section="Item" arguments="{data: element.data, element: element, iterator: iterator}" />
+						<f:render section="Item" arguments="{record: data, data: element.data, element: element, iterator: iterator}" />
 					</li>
 				</f:for>
 			</ul>
@@ -27,7 +27,22 @@
 			</f:if>
 
 			<f:if condition="{element.data.title}">
-				<div class="ce-kist-values__item-title">{element.data.title}</div>
+				<div class="ce-kist-values__item-title">
+					<f:switch expression="{record.tx_foundation_elements_header}">
+						<f:case value="2">
+							<h2>{element.data.title}</h2>
+						</f:case>
+						<f:case value="3">
+							<h3>{element.data.title}</h3>
+						</f:case>
+						<f:case value="4">
+							<h4>{element.data.title}</h4>
+						</f:case>
+						<f:defaultCase>
+							{element.data.title}
+						</f:defaultCase>
+					</f:switch>
+					</div>
 			</f:if>
 		</button>
 	</f:section>
