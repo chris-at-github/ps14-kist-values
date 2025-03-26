@@ -14,3 +14,14 @@ mod.wizards.newContentElement.wizardItems {
 		show := addToList(ps14_kist_values)
 	}
 }
+
+
+[field('CType') === 'ps14_kist_values']
+	TCEFORM.tt_content {
+		tx_foundation_variant {
+			addItems {
+				icons = LLL:EXT:ps14_kist_values/Resources/Private/Language/locallang_tca.xlf:content.variant.icons
+			}
+		}
+	}
+[END]

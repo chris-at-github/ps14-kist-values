@@ -4,10 +4,14 @@
 		<header/>
 		<body>
 			<trans-unit id="title">
-				<source>KIST + ESCHERICH company values</source>
+				<source>KIST + ESCHERICH values</source>
 			</trans-unit>
 			<trans-unit id="description">
-				<source>Display of company values as postcards</source>
+				<source>Display of company values and benefits</source>
+			</trans-unit>
+
+			<trans-unit id="content.variant.icons">
+				<source>Icons</source>
 			</trans-unit>
 
 			<trans-unit id="elements.record-type.default">
@@ -42,6 +46,27 @@
 			</trans-unit>
 			<trans-unit id="elements.color-scheme.turquoise-white">
 				<source>Turquoise-White</source>
+			</trans-unit>
+			<trans-unit id="elements.color-scheme.white-primary">
+				<source>White-Primary</source>
+			</trans-unit>
+			<trans-unit id="elements.color-scheme.white-secondary">
+				<source>White-Secondary</source>
+			</trans-unit>
+			<trans-unit id="elements.color-scheme.primary-default">
+			<source>Primary (Default)</source>
+			</trans-unit>
+			<trans-unit id="elements.color-scheme.primary-light">
+				<source>Primary (Light)</source>
+			</trans-unit>
+			<trans-unit id="elements.color-scheme.secondary-default">
+				<source>Secondary (Default)</source>
+			</trans-unit>
+			<trans-unit id="elements.color-scheme.secondary-light">
+				<source>Secondary (Light)</source>
+			</trans-unit>
+			<trans-unit id="elements.color-scheme.grey-default">
+				<source>Grey (Default)</source>
 			</trans-unit>
 		</body>
 	</file>

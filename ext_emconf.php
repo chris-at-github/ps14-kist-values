@@ -2,7 +2,7 @@
 
 $EM_CONF[$_EXTKEY] = [
 	'title' => 'Ps14 Kist Values',
-	'description' => 'A TYPO3 extension for displaying company values from KIST + ESCHERICH',
+	'description' => 'A TYPO3 extension for displaying company values and benefits from KIST + ESCHERICH',
 	'category' => 'distribution',
 	'author' => 'Christian Pschorr',
 	'author_email' => 'pschorr.christian@gmail.com',

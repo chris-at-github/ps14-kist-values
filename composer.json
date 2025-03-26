@@ -1,7 +1,7 @@
 {
 	"name": "ps14/kist-values",
 	"type": "typo3-cms-extension",
-	"description": "A TYPO3 extension for displaying company values from KIST + ESCHERICH",
+	"description": "A TYPO3 extension for displaying company values and benefits from KIST + ESCHERICH",
 	"keywords": [
 		"TYPO3",
 		"extension"

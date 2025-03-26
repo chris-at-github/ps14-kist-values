@@ -4,10 +4,14 @@
 		<header/>
 		<body>
 			<trans-unit id="title">
-				<target>KIST + ESCHERICH Firmenwerte</target>
+				<target>KIST + ESCHERICH Werte</target>
 			</trans-unit>
 			<trans-unit id="description">
-				<target>Darstellung der Firmenwerte als Postkarten</target>
+				<target>Darstellung der Werten für die Firmenwerte, Benefits, ...</target>
+			</trans-unit>
+
+			<trans-unit id="variant.icons">
+				<target>Icons</target>
 			</trans-unit>
 
 			<trans-unit id="elements.record-type.default">
@@ -45,6 +49,27 @@
 			</trans-unit>
 			<trans-unit id="elements.color-scheme.turquoise-white">
 				<target>Turquoise-White</target>
+			</trans-unit>
+			<trans-unit id="elements.color-scheme.white-primary">
+				<target>White-Primary</target>
+			</trans-unit>
+			<trans-unit id="elements.color-scheme.white-secondary">
+				<target>White-Secondary</target>
+			</trans-unit>
+			<trans-unit id="elements.color-scheme.primary-default">
+				<target>Primary (Default)</target>
+			</trans-unit>
+			<trans-unit id="elements.color-scheme.primary-light">
+				<target>Primary (Light)</target>
+			</trans-unit>
+			<trans-unit id="elements.color-scheme.secondary-default">
+				<target>Secondary (Default)</target>
+			</trans-unit>
+			<trans-unit id="elements.color-scheme.secondary-light">
+				<target>Secondary (Light)</target>
+			</trans-unit>
+			<trans-unit id="elements.color-scheme.grey-default">
+				<target>Grey (Default)</target>
 			</trans-unit>
 		</body>
 	</file>
